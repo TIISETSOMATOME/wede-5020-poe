@@ -23,7 +23,7 @@ Testing: WEEK 5
 
 ## Sitemap
 
-![Website Sitemap](img/SITE MAP .png) <br> 
+![Website Sitemap](img/sitemap.png) <br> 
 
 ## References
 
