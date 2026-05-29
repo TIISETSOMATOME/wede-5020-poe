@@ -85,13 +85,13 @@ p{
 }
 
 .home-main h1 {
-    color: #333333; /* Clean replacement for the old font tags */
+    color: #333333; 
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
 
 .home-main h2 {
-    color: #b07d62; /* Using your warm brown accent color from your nav-link hover state */
+    color: #b07d62; 
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -104,7 +104,6 @@ p{
     margin-bottom: 1.5rem;
 }
 
-/* Collections List Styling */
 .home-main ul {
     list-style: none;
     padding: 0;
@@ -122,7 +121,7 @@ p{
     font-weight: 600;
     color: #333333;
     display: flex;
-    justify-content: space-between; /* Keeps item name left and price right */
+    justify-content: space-between;
 }
 
 .home-main ul li:last-child {
@@ -270,4 +269,121 @@ img[src*="cakes"] {
 
 .enquire-btn:hover {
     background-color: #38291d; 
+}
+
+.about {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;
+    max-width: 800px;         
+    margin: 60px auto;        
+    padding: 0 20px;         
+    box-sizing: border-box;
+}
+
+
+.about h2 {
+    font-size: 2.5rem;         
+    color: #222222;           
+    margin-bottom: 20px;       
+    text-transform: uppercase;
+    letter-spacing: 2px;       
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;         
+    color: #555555;           
+    line-height: 1.6;         
+    margin-bottom: 15px;       
+    text-align: center;        
+}
+
+.about video {
+    margin-top: 30px;          
+    max-width: 100%;          
+    height: auto;             
+    border-radius: 8px;        
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; 
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    box-sizing: border-box;
+}
+
+.enquiry-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px; 
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+    border-color: #8b5a2b; 
+    outline: none;
+    background-color: #ffffff;
+}
+
+.enquiry-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5c3a21; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.enquiry-form button:hover {
+    background-color: #3d2514;
 }

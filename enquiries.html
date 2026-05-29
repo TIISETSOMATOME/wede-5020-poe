@@ -52,24 +52,38 @@
     </div>
 
 </header>
-    <Main>
-        <form>
-            <hr>
-  Name   :
-  <input type="text" name="name"><br><br>
-  Surname:
-  <input type="text" name="surname"><br><br>
-  Reason :
-  <select name="reason">
-    <option>Birthday</option>
-    <option>Wedding</option>
-    <option>Custom Cake</option>
-  </select><br><br>
-  Details:
-  <textarea name="details"></textarea><br><br>
-  <button>Submit</button>
-</form>
-    </Main>
+    <main class="form-container">
+    <form class="enquiry-form">
+        
+        <h2>Enquiry Form</h2>
+
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Surname:</label>
+            <input type="text" name="surname" placeholder="Enter your surname" required>
+        </div>
+
+        <div class="form-group">
+            <label>Reason:</label>
+            <select name="reason">
+                <option>Birthday</option>
+                <option>Wedding</option>
+                <option>Custom Cake</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Details:</label>
+            <textarea name="details" placeholder="Tell us more about your order..." rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
     <footer class="footer">
             <!--footer-->
        <hr>
