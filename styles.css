@@ -30,7 +30,18 @@ p{
   text-align: center;
   color: #fdfbf7;
 }
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
 .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     background-color: rgba(247, 237, 226, 0.65); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -65,4 +76,198 @@ p{
 .nav-link:hover {
     color: #b07d62;            
     text-shadow: 0px 1px 2px rgba(0,0,0,0.1); 
+}
+.home-main {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.home-main h1 {
+    color: #333333; /* Clean replacement for the old font tags */
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-main h2 {
+    color: #b07d62; /* Using your warm brown accent color from your nav-link hover state */
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.home-main p {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Collections List Styling */
+.home-main ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.home-main ul li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #fdfbf7;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    justify-content: space-between; /* Keeps item name left and price right */
+}
+
+.home-main ul li:last-child {
+    border-bottom: none;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* "Enquire" Link inside list item */
+.home-main ul li a {
+    color: #b07d62;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.home-main ul li a:hover {
+    color: #38291d;
+    text-decoration: underline;
+}
+
+/* Cake Showcase Image */
+img[src*="cakes"] {
+    max-width: 100%;
+    height: auto; /* Overrides fixed attributes to ensure it's responsive */
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.footer {
+    background-color: #38291d; /* Pulling your dark brown brand color down to anchor the page */
+    color: #fdfbf7; /* Light background color used as text color here for high contrast */
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 6rem;
+}
+
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+}
+
+.footer small {
+    display: block;
+    margin: 0.5rem 0 1.5rem 0;
+    opacity: 0.8;
+}
+
+.footer a {
+    color: #fdfbf7;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+.footer p a {
+    margin: 0 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.shop {
+    max-width: 1200px;
+    margin: 4rem auto; 
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.shop-title {
+    text-align: center;
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem; /* Creates clean breathing room between cards */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; /* Ensures image corners match the card border radius */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(176, 125, 98, 0.1); /* Subtle accent color border */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Crops image neatly inside the container without stretching it */
+    margin-bottom: 1rem;
+}
+
+/* Product Titles */
+.product-card h3 {
+    font-size: 1.3rem;
+    color: #38291d;
+    margin: 0.5rem 0;
+}
+
+.product-card .price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #b07d62; 
+    margin-bottom: 0.5rem;
+}
+
+.enquire-btn {
+    display: inline-block;
+    background-color: #b07d62;
+    color: #fdfbf7;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.enquire-btn:hover {
+    background-color: #38291d; 
 }
