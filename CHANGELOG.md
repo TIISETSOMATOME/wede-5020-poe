@@ -6,13 +6,20 @@ This project follows Semantic Versioning.
 
 ## [1.0.0] 
 ### Added
-- xyz
+- I added a css file and named it styles.css
+-i added css for the body
+-css for my hero section
+-css for my main wich have different clsses in each html file
+-css for my html form 
+-added coments
+
 
 ### Changed
-- xyz
+- i removed the table in nav
+
 
 ### Fixed
-- xyz
+- fixed my html form
 
 ## Semantic Versioning
 
