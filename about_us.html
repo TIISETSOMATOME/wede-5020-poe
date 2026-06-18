@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- SECTION 3.1: On-Page SEO Essentials -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
+    <title>About Us | House Of Crumbs Bakery Story & Mission</title>
+    <meta name="description" content="Discover the story behind House of Crumbs. Established in 2020, we focus on high-quality ingredients, exceptional custom cakes for weddings and birthdays, and fresh local baking.">
+    
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- JavaScript Link (Using 'defer' to ensure safe execution across subpages) -->
+    <script src="java.js" defer></script>
 </head>
 <body>
   <header class="hero">
-
     <div class="top-bar">
-
         <div>
-            <img src="img/Logo.png" width="120" class="logo">
+            <!-- SECTION 3.1: Image Optimization - Added meaningful alt description -->
+            <img src="img/Logo.png" width="120" class="logo" alt="House Of Crumbs Bakery Official Logo">
         </div>
 
         <!-- NAVIGATION -->
         <nav class="navbar">
-
             <a href="index.html" class="nav-link">Home</a>
             <a href="about_us.html" class="nav-link">About</a>
             <a href="enquiries.html" class="nav-link">Enquiries</a>
             <a href="shop_now.html" class="nav-link">Shop</a>
             <a href="contact_us.html" class="nav-link">Contact</a>
-
         </nav>
-
     </div>
 
     <div class="hero-content">
-
         <div class="hero-text">
-
             <h1>House Of Crumbs</h1>
-
-            <p>
-                 WE BAKE 4 U
-            </p>
-
-            
-
+            <p>WE BAKE 4 U</p>
         </div>
-
     </div>
-
 </header>
-    <main class="about">
-          <!--content including information about us and a video-->
+
+    <!-- SECTION 2.1: Added "fade-in" class to match your homepage loading animation -->
+    <main class="about fade-in">
+        <!--content including information about us and a video-->
         <h2>ABOUT US</h2>
         <p>The House Of Crumbs is a bakery that specialises in making quality cakes and bread. Thebakery was started in 2020. The House Of Crumbs is very picky about what they use to make their cakes and bread.The House Of Crumbs only uses ingredients of the highest quality. The bakery wants to make high quality cakes and bread that look nice for people who live near them,they also make custom cakes for birthdays and weddings. The House Of Crumbs is trying to sell to people who love food people who plan parties and people who buy gifts for others.</p>
         <p>The aim is to show what the bakery can do. This will help get more people to visit the store and order custom cakes. We will know if it is working if we get calls for custom cakes and if people click on "Directions" on our contact page. We want to increase custom cake orders. The bakerys portfolio is key to achieving this. More "Directions" clicks and custom cake enquiries mean we are, on the track.</p>
         <video src="videos/cake video.mp4" width="500" height="300" autoplay controls loop></video>
-
     </main>
+
  <footer class="footer">
-            <!--footer-->
+       <!--footer-->
        <hr>
-       HOUSE OF CRUMBS<br>
-       &copy;copyright reserved<br>
-       <small><a href="mailto:MAISONDECRUMBS@gmail.com">MAISONDECRUMBS@gmail.com</a></small> 
-     <p>
-    <a href="index.html">Home</a>  | 
-    <a href="about_us.html">About</a> | 
-    <a href="contact_us.html">Contact</a>
-    </footer>  
+       <div class="footer-info" style="text-align: center;">
+           HOUSE OF CRUMBS<br>
+           <!-- SECTION 2.1: Advanced DOM Manipulation Hook to render year automatically -->
+           &copy; <span id="currentYear"></span> copyright reserved<br>
+           <small><a href="mailto:MAISONDECRUMBS@gmail.com">MAISONDECRUMBS@gmail.com</a></small> 
+         <p>
+            <a href="index.html">Home</a>  | 
+            <a href="about_us.html">About</a> | 
+            <a href="contact_us.html">Contact</a>
+         </p>
+       </div>
+ </footer>  
 </body>
 </html>

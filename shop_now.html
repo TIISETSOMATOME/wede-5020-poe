@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- SECTION 3.1: On-Page SEO Essentials -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Now</title>
+    <title>Shop Our Freshly Baked Products | House Of Crumbs</title>
+    <meta name="description" content="Browse our delicious range of cakes at House of Crumbs. From Red Velvet to Chocolate and Caramel, find your perfect treat or enquire about custom designs.">
+    
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- JavaScript Link (Deferred tracking) -->
+    <script src="java.js" defer></script>
 </head>
 <body>
     <header class="hero">
-
     <div class="top-bar">
-
         <div>
-            <img src="img/Logo.png" width="120" class="logo">
+            <!-- SECTION 3.1: Image Optimization -->
+            <img src="img/Logo.png" width="120" class="logo" alt="House Of Crumbs Bakery Official Logo">
         </div>
 
         <!-- NAVIGATION -->
         <nav class="navbar">
-
             <a href="index.html" class="nav-link">Home</a>
             <a href="about_us.html" class="nav-link">About</a>
             <a href="enquiries.html" class="nav-link">Enquiries</a>
             <a href="shop_now.html" class="nav-link">Shop</a>
             <a href="contact_us.html" class="nav-link">Contact</a>
-
         </nav>
-
     </div>
 
     <!-- HERO CONTENT -->
     <div class="hero-content">
-
-        <!-- LEFT TEXT -->
         <div class="hero-text">
-
             <h1>House Of Crumbs</h1>
-
-            <p>
-                WE BAKE 4 U
-            </p>
-
-            
-
+            <p>WE BAKE 4 U</p>
         </div>
-
     </div>
-
 </header>
 
-<main class="shop">
+<main class="shop fade-in">
     <h1 class="shop-title">Our Menu & Collections</h1>
-    
-    <div class="product-grid">
 
+    <!-- SECTION 2.2: Live Search Bar Interface -->
+    <div class="search-container" style="text-align: center; margin-bottom: 20px;">
+        <input type="text" id="productSearch" placeholder="Search for a cake..." style="padding: 10px; width: 300px;">
+    </div>
+    
+    <div class="product-grid" id="productGrid">
         <div class="product-card">
-            <img src="img/caramel cake.jpg" alt="Caramel Cake">
+            <img src="img/caramel cake.jpg" alt="Delicious freshly baked caramel cake">
             <h3>Caramel Cake</h3>
             <p class="price">R 150</p>
         </div>
 
         <div class="product-card">
-           <img src="img/red velvet cake.jpg" alt="Red Velvet Cake">
+           <img src="img/red velvet cake.jpg" alt="Signature Red Velvet cake">
             <h3>Red Velvet</h3>
             <p class="price">R 150</p>
         </div>
 
         <div class="product-card">
-             <img src="img/chocolate cake.jpg" alt="Chocolate Cake">
+             <img src="img/chocolate cake.jpg" alt="Rich chocolate cake slice">
             <h3>Chocolate</h3>
             <p class="price">R 150</p>
         </div>
 
         <div class="product-card">
-            <img src="img/custom cake.jpg" alt="Custom Cake">
+            <img src="img/custom cake.jpg" alt="Customised celebration cake">
             <h3>Custom</h3>
             <a href="enquiries.html" class="enquire-btn">Enquire</a>
         </div>
@@ -80,15 +75,17 @@
 </main>
 
 <footer class="footer">
-            <!--footer-->
        <hr>
-       HOUSE OF CRUMBS<br>
-       &copy;copyright reserved<br>
-       <small><a href="mailto:MAISONDECRUMBS@gmail.com">MAISONDECRUMBS@gmail.com</a></small> 
-     <p>
-    <a href="index.html">Home</a>  | 
-    <a href="about_us.html">About</a> | 
-    <a href="contact_us.html">Contact</a>
-    </footer>  
+       <div class="footer-info" style="text-align: center;">
+           HOUSE OF CRUMBS<br>
+           &copy; <span id="currentYear"></span> copyright reserved<br>
+           <small><a href="mailto:MAISONDECRUMBS@gmail.com">MAISONDECRUMBS@gmail.com</a></small> 
+         <p>
+            <a href="index.html">Home</a>  | 
+            <a href="about_us.html">About</a> | 
+            <a href="contact_us.html">Contact</a>
+         </p>
+       </div>
+</footer>  
 </body>
 </html>
