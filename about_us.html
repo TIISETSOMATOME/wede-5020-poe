@@ -8,9 +8,8 @@
     <meta name="description" content="Discover the story behind House of Crumbs. Established in 2020, we focus on high-quality ingredients, exceptional custom cakes for weddings and birthdays, and fresh local baking.">
     
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- JavaScript Link (Using 'defer' to ensure safe execution across subpages) -->
     <script src="java.js" defer></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://unpkg.com; img-src 'self' data:;">
 </head>
 <body>
   <header class="hero">
@@ -37,8 +36,6 @@
         </div>
     </div>
 </header>
-
-    <!-- SECTION 2.1: Added "fade-in" class to match your homepage loading animation -->
     <main class="about fade-in">
         <!--content including information about us and a video-->
         <h2>ABOUT US</h2>
@@ -52,7 +49,6 @@
        <hr>
        <div class="footer-info" style="text-align: center;">
            HOUSE OF CRUMBS<br>
-           <!-- SECTION 2.1: Advanced DOM Manipulation Hook to render year automatically -->
            &copy; <span id="currentYear"></span> copyright reserved<br>
            <small><a href="mailto:MAISONDECRUMBS@gmail.com">MAISONDECRUMBS@gmail.com</a></small> 
          <p>

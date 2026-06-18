@@ -539,3 +539,26 @@ img[src*="cakes"] {
     padding: 10px;
     border-radius: 12px;
 }
+/* Center the search bar and give it breathing room */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Control the exact size of the search input */
+.search-input {
+    width: 500px; /* You can change this number to make it as big or small as you want */
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding doesn't mess up the width */
+}
+
+/* Optional: Make it look nice when clicked */
+.search-input:focus {
+    border-color: #ff6f61; /* Change to your brand color */
+    outline: none;
+}
