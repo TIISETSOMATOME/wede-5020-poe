@@ -445,3 +445,15 @@ img[src*="cakes"] {
     font-size: 1rem;
     letter-spacing: 1px;
 }
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* This class will be added by JS to hide non-matching items */
+.hidden {
+    display: none;
+}
