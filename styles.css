@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
 
 }
+
 h1{
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -445,15 +446,96 @@ img[src*="cakes"] {
     font-size: 1rem;
     letter-spacing: 1px;
 }
-.search-container input {
-    width: 300px;
-    padding: 10px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-size: 16px;
+
+/* ========================================= */
+/* NEW ADDITIONS FOR ASSIGNMENT REQUIREMENTS */
+/* ========================================= */
+
+/* 1. ANIMATION: Fade-in effect for main content */
+.fade-in {
+    animation: fadeInAnimation 1.5s ease-in;
 }
 
-/* This class will be added by JS to hide non-matching items */
-.hidden {
-    display: none;
+@keyframes fadeInAnimation {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. GALLERY LIGHTBOX MODAL */
+.gallery-img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img:hover {
+    opacity: 0.7; /* Gives a nice visual cue that the image is clickable */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; /* Set high so it floats over your sticky navbar */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.85); /* Dark transparent background */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px; /* Matches your cake image corners */
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from { transform: scale(0); } 
+    to { transform: scale(1); }
+}
+
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fdfbf7;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #b07d62; /* Uses your theme's accent color */
+    text-decoration: none;
+}
+
+/* 3. INTERACTIVE MAP & FOOTER LAYOUT */
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.footer-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-map {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fdfbf7; /* Light border around the map */
+    padding: 10px;
+    border-radius: 12px;
 }
